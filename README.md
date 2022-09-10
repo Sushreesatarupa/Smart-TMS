@@ -39,4 +39,8 @@ Anamaly in a cell:
 Cut off of the bad cell:
 ![image](https://user-images.githubusercontent.com/64991656/189503999-ed227b4e-5c7c-4be2-942b-325bef198941.png)
 
+Our Hardware Protype:
+![image](https://user-images.githubusercontent.com/64991656/189504331-9f31d9b2-4bf5-4089-a5c0-92d9a2bc0074.png)
+
+
 
