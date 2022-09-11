@@ -90,8 +90,8 @@ Our Hardware Prototype:
 
 References:
 
--
--
+- https://www.sciencedirect.com/science/article/abs/pii/S2352152X22000111
+- https://ieeexplore.ieee.org/document/9138778
 -
 -
 
