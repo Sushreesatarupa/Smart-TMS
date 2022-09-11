@@ -44,3 +44,50 @@ Our Hardware Prototype:
 
 
 
+
+## THERMAL
+
+- Thermal runaway is one of the major phenomena that causes the burning of battery packs in EVs. 
+- In our model, we have proposed to employ forced convection for thermally managing the abnormal temperature deviation in the cells. 
+- The inlet volumetric rate of flow of compressed air is determined based on the heat generated in the battery pack. 
+- Simulations are conducted on ANSYS fluent to depict the efficiency of employing this air cooling method. 
+- We do not use any power source to drive the cooling technology. 
+
+## Technologies we used:
+- Python 
+- Ansys CFD 
+- Solidworks 
+- Arduino 
+- Matplotlib
+- Scilab
+
+## Features:
+- ML model to isolate damaged cells and maintain an optimum temperature of the cells.
+- Thermal Cooling features in the battery pack, for handling small temperature fluctuations.
+- Improving safety and reducing mishaps.
+
+## Post hackathon:
+- Improvement of ML model for more accurate results after data collection.
+- Optimizing the battery pack design to make it compact.
+
+## Challenges we ran into:
+- Unavailability of data related to electric vehicles and battery packs for ML modeling. 
+- After lots of exploration, we were able to find research papers and we converted the graphs and lab-based data into datasets
+
+## Conclusion
+
+- Our concept ensures safety, but if we talk about drawbacks it lowers the vehicle performance.
+- In comparion to battery packs currently available on the market, our model with temperature sensors and MOSFETs would cost just 8 percent more but will ensure safety. 
+- For future work, we would improvise our AI model after collecting sufficient data for accurate modeling, optimizing accumulator design making it more compact. 
+- Besides this, we have thought that sweeping jet actuators can be a promising technology in the thermal management of battery packs due to their ability to steer the jet in space.
+
+
+References:
+
+-
+-
+-
+-
+
+
+
