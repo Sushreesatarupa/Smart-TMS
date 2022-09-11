@@ -70,6 +70,9 @@ Our Hardware Prototype:
 - Arduino 
 - Matplotlib
 - Scilab
+- Arduino
+- Node.js
+- Express.js
 
 ## Features:
 - ML model to isolate damaged cells and maintain an optimum temperature of the cells.
