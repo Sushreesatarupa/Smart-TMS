@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        #my-input-cntnr {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border-width: 2px;
+            border-color: aqua;
+        }
+
+        label {
+            width: 100px;
+            height: 100px;
+        }
+        .Row {
+    display: table;
+    width: 70%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+}
+.Column {
+    display: table-cell;
+    background-color: rgb(0, 17, 255);
+    border-color: black;
+    border-radius: 5%;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20;    
+}
+    </style>
+    <div style="    align-items: center;
+    display: flex;
+    flex-direction: column;margin-top: 100px;">
+        <div class="Row">
+            <div class="Column" onmousewheel="x(event,0)">10</div>
+            <div class="Column"  onmousewheel="x(event,4)">10</div>
+            <div class="Column"  onmousewheel="x(event,8)">10</div>
+        </div>
+        <div class="Row">
+            <div class="Column"  onmousewheel="x(event,1)">10</div>
+            <div class="Column"  onmousewheel="x(event,5)">10</div>
+            <div class="Column"  onmousewheel="x(event,9)">10</div>
+        </div>
+        <div class="Row">
+            <div class="Column"  onmousewheel="x(event,2)">10</div>
+            <div class="Column"  onmousewheel="x(event,6)">10</div>
+            <div class="Column"  onmousewheel="x(event,10)">10</div>
+        </div>
+        <div class="Row">
+            <div class="Column"  onmousewheel="x(event,3)">10</div>
+            <div class="Column"  onmousewheel="x(event,7)">10</div>
+            <div class="Column"  onmousewheel="x(event,11)">10</div>
+        </div>
+    </div>
+    <script>
+    var arr=[10,10,10,10,10,10,10,10,10,10,10,10]
+        function heatMapColorforValue(value){
+    var h = (1.0 - value) * 240
+    return "hsl(" + h + ", 100%, 50%)";
+    }
+    const x=(e,ind)=>{
+        var cal=e.target || e.srcElement
+        if (e.deltaY > 1) {
+                cal.innerText--
+                arr[ind]--
+            } else if (e.deltaY < -1) {
+                cal.innerText++;
+                arr[ind]++
+            }
+            cal.style['background-color']=heatMapColorforValue(arr[ind]/60)
+            console.log(arr)
+
+            fetch("http://localhost:4000/update", {
+        method:'post',
+        mode:'cors',
+        credentials: 'same-origin',
+        headers: {"Content-type": "application/json; charset=UTF-8"},
+        body : JSON.stringify({data:arr})
+    }).then((s)=>{}).catch(()=>{})
+    }
+    </script>
+</body>
+
+</html>
