@@ -59,6 +59,7 @@ Our Hardware Prototype:
 - Simulations are conducted on ANSYS fluent to depict the efficiency of employing this air cooling method. 
 - We do not use any power source to drive the cooling technology. 
 ![image](https://user-images.githubusercontent.com/64991656/189510577-cd091d39-3684-4414-86ea-d78fead54179.png)
+![image](https://user-images.githubusercontent.com/64991656/189510863-20914092-a9bf-47ae-87ff-f7ef014e7b1d.png)
 
 
 
